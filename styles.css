@@ -441,136 +441,21 @@ body::before {
     }
 }
 
-/* Mobile phones */
+/* Mobile phones - fixed position in lower right */
 @media (max-width: 480px) {
-    body {
-        padding: 0.5rem;
-    }
-
-    .main-container {
-        padding: 0.5rem;
-        min-height: 50vh;
-    }
-
-    .birthday-message {
-        font-size: clamp(1.2rem, 8vw, 2.5rem);
-        margin-bottom: 1.5rem;
-        letter-spacing: 0.02em;
-    }
-
-    .music-player {
-        width: calc(100vw - 20px);
-        max-width: 300px;
-        top: 5px;
-        right: 5px;
-        left: 5px;
-        padding: 10px;
-    }
-
-    .music-player.minimized {
-        top: 5px;
-        right: 5px;
-        width: 45px;
-        height: 45px;
-    }
-
-    .player-info {
-        margin-bottom: 8px;
-    }
-
-    .song-name {
-        font-size: 0.85rem;
-    }
-
-    .song-artist {
-        font-size: 0.7rem;
-    }
-
-    .progress-container {
-        margin-bottom: 8px;
-    }
-
-    .time-info {
-        font-size: 0.6rem;
-        margin-top: 4px;
-    }
-
-    .player-controls {
-        gap: 8px;
-        margin-bottom: 8px;
-    }
-
-    .control-btn {
-        width: 32px;
-        height: 32px;
-        font-size: 0.9rem;
-    }
-
-    .play-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 1.1rem;
-    }
-
-    .volume-container {
-        padding: 8px;
-    }
-
-    .volume-icon {
-        font-size: 0.9rem;
-        min-width: 16px;
-    }
-
     .secret-button {
-        padding: 14px 25px;
-        font-size: 1rem;
-        margin-top: 1.5rem;
-        max-width: 250px;
-    }
-
-    .modal {
-        padding: 0.5rem;
-    }
-
-    .modal-content {
-        padding: 1.5rem;
-        width: 95%;
-        border-radius: 20px;
-    }
-
-    .modal h2 {
-        font-size: 1.4rem;
-        margin-bottom: 1rem;
-    }
-
-    .password-input {
-        padding: 14px;
-        font-size: 1.2rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .secret-message {
-        width: calc(100% - 1rem);
-        padding: 1.5rem;
-        border-radius: 20px;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .secret-message h3 {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-    }
-
-    .secret-message p {
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 1.5rem;
-    }
-
-    .hearts {
-        font-size: 1.5rem;
-        margin: 1rem 0;
+        position: fixed !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        left: auto !important;
+        transform: none !important;
+        width: auto !important;
+        max-width: none !important;
+        margin-top: 0 !important;
+        padding: 12px 20px !important;
+        font-size: 0.9rem !important;
+        min-width: 180px !important;
+        z-index: 300 !important;
     }
 }
 
@@ -586,9 +471,18 @@ body::before {
     }
 
     .secret-button {
-        padding: 12px 20px;
-        font-size: 0.95rem;
-        max-width: 220px;
+        position: fixed !important;
+        bottom: 15px !important;
+        right: 15px !important;
+        left: auto !important;
+        transform: none !important;
+        width: auto !important;
+        max-width: none !important;
+        margin-top: 0 !important;
+        padding: 10px 18px !important;
+        font-size: 0.85rem !important;
+        min-width: 160px !important;
+        z-index: 300 !important;
     }
 
     .modal-content {
@@ -868,9 +762,18 @@ html {
     }
 
     .secret-button {
-        margin-top: 1rem;
-        padding: 10px 20px;
-        font-size: 0.9rem;
+        position: fixed !important;
+        bottom: 10px !important;
+        right: 10px !important;
+        left: auto !important;
+        transform: none !important;
+        width: auto !important;
+        max-width: none !important;
+        margin-top: 0 !important;
+        padding: 8px 16px !important;
+        font-size: 0.8rem !important;
+        min-width: 140px !important;
+        z-index: 300 !important;
     }
 }
 
