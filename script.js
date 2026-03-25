@@ -136,8 +136,8 @@ window.toggleMusicPlayer = function() {
                 <button class="player-close" onclick="toggleMusicPlayer()" title="Minimize player">✕</button>
             </div>
             <div class="player-info">
-                <div class="song-name" id="songName">🎵 Birthday Song</div>
-                <div class="song-artist" id="songArtist">wave to earth - love.</div>
+                <div class="song-name" id="songName">love.</div>
+                <div class="song-artist" id="songArtist">wave to earth</div>
             </div>
             <div class="progress-container">
                 <div class="progress-bar" id="progressBar">
@@ -286,10 +286,12 @@ function closeSecret() {
 TOGGLE_PASSWORD.addEventListener('click', function () {
     if (PASSWORD_INPUT.type === 'password') {
         PASSWORD_INPUT.type = 'text';
-        TOGGLE_PASSWORD.textContent = 'Hide';
+        TOGGLE_PASSWORD.innerHTML = 'Hide';
+        TOGGLE_PASSWORD.setAttribute('aria-label', 'Hide password');
     } else {
         PASSWORD_INPUT.type = 'password';
-        TOGGLE_PASSWORD.textContent = 'Show';
+        TOGGLE_PASSWORD.innerHTML = 'Show';
+        TOGGLE_PASSWORD.setAttribute('aria-label', 'Show password');
     }
     PASSWORD_INPUT.focus();
 });
